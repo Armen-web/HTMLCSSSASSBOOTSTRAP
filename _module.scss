@@ -1,0 +1,103 @@
+@import "./variables";
+@import "./mixin";
+.box-first {
+    box-shadow: 5px 5px 12px -6px #000000;
+    background-color: #ffffff;
+}
+.box-second {
+    @include flexJustify(center);
+    div {
+        overflow: hidden;
+        margin-top: 2px;
+        cursor: pointer;
+    }
+    i {
+        color: $primary;
+        font-family: 'roboto' sans-serif;
+    }
+    div:hover {
+        color: white;
+        background-color: $primary;
+        font-family: 'roboto' sans-serif;
+        font-size: 15px;
+        overflow: hidden;
+    }
+    div:hover {
+        i {
+            color: white;
+        } 
+    }
+ }
+ .video {
+    background-image: url(./images/video.jpeg);
+    box-shadow: 5px 5px 12px -6px #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .shodow-box {
+    justify-content: space-between;
+ }
+ .services-box-first {
+     h1 {
+        margin-top: 25px;
+     }
+     div {
+        height: 2px;
+        width: 50px;
+        background-color: $primary;
+     }
+}
+.services-box-second {
+    div {
+        margin-top: 15px;
+        @include dflexColumned(column);
+    }
+    div {
+        h1 {
+            display: block;
+            color: $primary;
+            margin-top: 15px;
+            font-size: 20px;
+        }
+        i {
+            color: $primary;
+            display: inline;
+        }
+    }
+
+}
+.portfolio {
+    margin-right: 0px;
+    h1 {
+        font-family: 'roboto' sans-serif;
+        color: black;
+        margin-top: 30px;
+    }
+}
+.portfolio-div {
+    height: 2px;
+    width: 50px;
+    background-color: $primary;
+ }
+ .categories {
+    @include flexJustify(flex-end !important);
+    margin-top: 50px;
+    div {
+        width: 100px;
+        height: 30px;
+        border: none;
+        background-color: #eeeeee;
+        margin-left: 5px;
+        border-radius: 5%;
+        margin-top: 5px;
+    }
+    div:hover {
+        background-color: $primary;
+        color: white;
+        cursor: pointer;
+    }
+}
+.portfolio-button {
+    margin-top: 20px;
+}

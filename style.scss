@@ -1,0 +1,92 @@
+@import "./customizeBootstrap";
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/mixins";
+@import "./variables";
+@import "mixin";
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+.navbar-my-style {
+    margin-left: 20px;
+    @include dflexColumned(column);
+    a {
+        color: #333333;
+        text-decoration: none;
+    }
+    div {
+        border: none;
+        border-radius: 13%;
+        height: 3px;
+        width: 100%;
+        background-color: white;
+    }
+    &:hover  {
+        div {
+            transition: 0.4s ease-in-out;
+            background-color: $primary;
+        }
+    }
+}
+.lconDiv {
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    border: solid 0.5px $primary;
+    border-radius: 17%;
+    background-color: $primary;
+}
+.icon {
+    color: wheat;
+}
+.my-logo {
+    img {
+        overflow: hidden;
+        width: 20px;
+        height: 20px;
+    }
+}
+.carousel-caption {
+    h1 {
+        color: black;
+        font-family: 'roboto' sans-serif;
+    }
+    p {
+        color: black;
+        font-family: 'roboto' sans-serif;
+    }
+}
+.button-carusel {
+    width: 200px;
+    height: 50px;
+    background-color: blanchedalmond;
+    color: black;
+    font-family: 'roboto' sans-serif;
+    font-size: 20px;
+    border: none;
+}
+.card-images {
+    i {
+        color: $primary;
+    }
+    h5 {
+        color: $primary;
+    }
+    div {
+        border: none;
+    }
+}
+.card {
+    align-items: center;
+    text-align: center;
+}
+.text {
+    padding: 25px;
+    font-size: 20px;
+}
+.member-photo {
+    border-radius: 50%;
+}
+@import "module";
+@import "module1";
+@import "module2";

@@ -1,0 +1,158 @@
+@import "./variables";
+@import "./mixin";
+.working-time {
+    div {
+        @include dflexColumned(column);
+        text-align: center;
+        i {
+            color: $primary;
+        }
+    }  
+}
+.our-team {
+    div {
+        padding-left: 0;
+        width: 50px;
+        height: 2px;
+        background-color: $primary;
+    }
+}
+.team-members {
+    h1 {
+        color: $primary;
+        font-size: 20px;
+    }
+}
+.my-carousel-style {
+    padding-top: 40px;
+    img {
+        height: 95vh;
+    }
+}
+.my-carousel {
+    p {
+        color: $primary;
+    }
+    h3 {
+        color: $primary;
+    }
+    h1 {
+        color: #ffffff;
+    }
+}
+.container-images {
+    div {
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+}
+.our-stories {
+    h1 {
+        margin-top: 30px;
+    }
+    div { 
+        height: 2px;
+        width: 50px;
+        background-color: $primary;
+    }
+}
+.stories {
+    h5 {
+        color: $primary;
+    }
+}
+.stories-button {
+    margin-top: 135px;
+}
+.comment-link {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.comments {
+    @include flexJustify(space-between);
+    a {
+        text-decoration: none;
+        padding-right: 10px;
+    }
+}
+.link-in-stories {
+    @include flexJustify(center);
+    height: 40px;
+    width: 40px;
+    color: white;
+    background-color: $primary;
+    border: none;
+    border-radius: 20px;
+    i {
+        color: white;
+    }
+}
+.contact-as {
+    h1 {
+        padding-left: 0;
+    }
+    div {
+        height: 2px;
+        width: 50px;
+        background-color: $primary;
+    }
+}
+.contacts {
+    p {
+        font-size: 20px;
+        color: black;
+    }
+}
+.location {
+    div {
+        @include flexJustify(center);
+        height: 45px;
+        width: 45px;
+        border: none;
+        border-radius: 7%;
+        background-color: $primary;
+        box-shadow: 5px 5px 12px -6px #000000;
+        margin-top: 15px;
+        i {
+            color: white;
+        }
+    }
+    p {
+        margin: 0 auto ;
+        padding: 0  auto;
+        margin: 0 auto;
+        padding: 0 auto;
+        @include flexJustify(flex-start);
+    }
+    
+}
+.my-form  {
+    div {
+        input {
+            border: none;
+        }
+    }
+}
+.about {
+    h1 {
+        padding-left: 0;
+        color: #ffffff;
+        font-size: 28px;
+    }
+    div {
+        height: 2px;
+        width: 50px;
+        background-color: $primary;
+    }
+
+}
+.first-footer {
+    background-color: #333333;
+}

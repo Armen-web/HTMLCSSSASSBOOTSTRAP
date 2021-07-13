@@ -1,0 +1,11 @@
+@mixin dflexColumned($column){
+    display:flex;
+    flex-direction: $column;
+    align-items: center;
+}
+@mixin flexJustify($variable){
+    display:flex;
+    justify-content: $variable;
+    align-items: center;
+    text-align: center;
+}
